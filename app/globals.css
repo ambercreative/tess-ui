@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary-lighter: 224 12% 22%;
+    --color-primary-light: 224 12% 17%;
+    --color-primary: 224 12% 12%;
+    --color-primary-dark: 224 12% 7%;
+    --color-primary-darker: 224 12% 2%;
+
+    --color-black: 224, 71%, 4%;
+    --color-white: 0 0% 100%;
+
+    --color-warning-lighter: 46, 97%, 77%;
+    --color-warning-light: 46, 97%, 71%;
+    --color-warning: 46, 97%, 65%;
+    --color-warning-dark: 46, 97%, 59%;
+    --color-warning-darker: 46, 97%, 53%;
+
+    --color-success-lighter: 158, 64%, 64%;
+    --color-success-light: 158, 64%, 58%;
+    --color-success: 158, 64%, 52%;
+    --color-success-dark: 158, 64%, 48%;
+    --color-success-darker: 158, 64%, 45%;
+
+    --color-error-lighter: 342, 89%, 62%;
+    --color-error-light: 342, 89%, 56%;
+    --color-error: 342, 89%, 48%;
+    --color-error-dark: 342, 89%, 43%;
+    --color-error-darker: 342, 89%, 38%;
+
+    --color-bg-lighter: 0 0% 100%;
+    --color-bg-light: 0 0% 100%;
+    --color-bg: 0 0% 100%;
+    --color-bg-dark: 210 20% 98%;
+    --color-bg-darker: 210 14% 96%;
+
+    --color-contrast-higher: 224, 71%, 4%;
+    --color-contrast-high: 224, 12%, 18%;
+    --color-contrast-medium: 219, 8%, 33%;
+    --color-contrast-low: 219, 7%, 48%;
+    --color-contrast-lower: 218, 11%, 65%;
+
+    --default-border-opacity: 0.1;
+  }
+
+  [theme=dark] {
+    
+  }
+
+  * {
+    @apply border-contrast-higher/[--default-border-opacity];
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-contrast-higher;
+  }
+
+  body {
+    @apply bg-bg text-contrast-high;
+  }
+}
