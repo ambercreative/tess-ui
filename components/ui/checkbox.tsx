@@ -1,23 +1,18 @@
-import * as Checkbox from '@radix-ui/react-checkbox';
-import {CheckIcon} from '../icons/checkIcon';
+import { forwardRef } from 'react';
+import * as CheckboxRx from '@radix-ui/react-checkbox';
+import CheckIcon from '../icons/checkIcon';
 
-const CheckboxDemo = () => (
-  <form>
-    <div className="flex items-center">
-      <Checkbox.Root
-        className="shadow-blackA4 hover:bg-violet3 flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-[4px] bg-white shadow-[0_2px_10px] outline-none focus:shadow-[0_0_0_2px_black]"
-        defaultChecked
-        id="c1"
-      >
-        <Checkbox.Indicator className="text-violet11">
-          <CheckIcon />
-        </Checkbox.Indicator>
-      </Checkbox.Root>
-      <label className="pl-[15px] text-[15px] leading-none text-white" htmlFor="c1">
-        Accept terms and conditions.
-      </label>
-    </div>
-  </form>
-);
+const Checkbox = forwardRef(({...props}, ref) => {
+  return (
+    <CheckboxRx.Root className="shadow-blackA4 hover:bg-violet3 flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-[4px] bg-white shadow-[0_2px_10px] outline-none focus:shadow-[0_0_0_2px_black]" {...props} ref={ref}>
+      <CheckboxRx.Indicator className="text-violet11">
+        <CheckIcon aria-hidden={true}/>
+      </CheckboxRx.Indicator>
+    </CheckboxRx.Root>
+  )
+  }
+)
 
-export default CheckboxDemo;
+Checkbox.displayName = CheckboxRx.Root.displayName
+
+export default Checkbox;
