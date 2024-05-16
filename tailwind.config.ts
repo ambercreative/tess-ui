@@ -51,10 +51,12 @@ const config: Config = {
           high: "hsl(var(--color-contrast-high) / <alpha-value>)",
           higher: "hsl(var(--color-contrast-higher) / <alpha-value>)",
         },
+        white: "hsl(var(--color-white) / <alpha-value>)",
+        black: "hsl(var(--color-black) / <alpha-value>)",
       },
       fontFamily: {
         'body': ['ui-sans-serif', 'system-ui', 'Inter', 'sans-serif'],
-        'heading': ['ui-sans-serif', 'system-ui', 'Inter', 'sans-serif'],
+        'title': ['ui-sans-serif', 'system-ui', 'Inter', 'sans-serif'],
       },
       borderRadius: {
         'inherit': 'inherit',
