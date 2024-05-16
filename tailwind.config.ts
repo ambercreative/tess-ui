@@ -37,12 +37,12 @@ const config: Config = {
           dark: "hsl(var(--color-warning-dark) / <alpha-value>)",
           darker: "hsl(var(--color-warning-darker) / <alpha-value>)",
         },
-        bg: {
-          lighter: "hsl(var(--color-bg-lighter) / <alpha-value>)",
-          light: "hsl(var(--color-bg-light) / <alpha-value>)",
-          DEFAULT: "hsl(var(--color-bg) / <alpha-value>)",
-          dark: "hsl(var(--color-bg-dark) / <alpha-value>)",
-          darker: "hsl(var(--color-bg-darker) / <alpha-value>)",
+        surface: {
+          lighter: "hsl(var(--color-surface-lighter) / <alpha-value>)",
+          light: "hsl(var(--color-surface-light) / <alpha-value>)",
+          DEFAULT: "hsl(var(--color-surface) / <alpha-value>)",
+          dark: "hsl(var(--color-surface-dark) / <alpha-value>)",
+          darker: "hsl(var(--color-surface-darker) / <alpha-value>)",
         },
         contrast: {
           lower: "hsl(var(--color-contrast-lower) / <alpha-value>)",

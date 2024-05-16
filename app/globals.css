@@ -28,11 +28,11 @@
     --color-warning-dark: 46, 97%, 59%;
     --color-warning-darker: 46, 97%, 53%;
 
-    --color-bg-lighter: 0 0% 100%;
-    --color-bg-light: 0 0% 100%;
-    --color-bg: 0 0% 100%;
-    --color-bg-dark: 210 20% 98%;
-    --color-bg-darker: 210 14% 96%;
+    --color-surface-lighter: 0 0% 100%;
+    --color-surface-light: 0 0% 100%;
+    --color-surface: 0 0% 100%;
+    --color-surface-dark: 210 20% 98%;
+    --color-surface-darker: 210 14% 96%;
 
     --color-contrast-higher: 224, 71%, 4%;
     --color-contrast-high: 224, 12%, 18%;
@@ -55,7 +55,7 @@
   }
 
   body {
-    @apply bg-bg text-contrast-high font-body;
+    @apply bg-surface text-contrast-high font-body;
   }
 
   h1, h2, h3, h4, h5, h6 {
