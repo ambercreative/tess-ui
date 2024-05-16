@@ -1,5 +1,7 @@
-function CheckIcon({...props}) {
-  const { fill = 'currentColor', secondaryfill = fill, size = '1em', ...rest } = props;
+import {IconProps} from '../lib/definitions';
+
+function CheckIcon(props: IconProps) {
+  const { fill = 'currentColor', secondaryFill = fill, size = '1em', ...rest } = props;
 
 	return (
 		<svg height={size} width={size} viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" {...rest}>
