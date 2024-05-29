@@ -4,11 +4,11 @@
 
 @layer base {
   :root {
-    --color-primary-lighter: 224 12% 22%;
-    --color-primary-light: 224 12% 17%;
-    --color-primary: 224 12% 12%;
-    --color-primary-dark: 224 12% 7%;
-    --color-primary-darker: 224 12% 2%;
+    --color-primary-lighter: 239 84 77;
+    --color-primary-light: 239 84 72;
+    --color-primary: 239 84 67;
+    --color-primary-dark: 239 84 62;
+    --color-primary-darker: 239 84 57;
 
     --color-success-lighter: 158 64% 64%;
     --color-success-light: 158 64% 58%;
@@ -44,7 +44,7 @@
     --color-white: 0 0% 100%;
 
     --color-shadow: 224 71% 4%;
-    --inner-glow-opacity: 0;
+    --inner-glow-opacity: 0.2;
 
     --default-border-opacity: 0.1;
   }
