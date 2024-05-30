@@ -8,13 +8,13 @@ type CheckboxProps = React.ComponentPropsWithoutRef<typeof CheckboxRx.Root>;
 const Checkbox = forwardRef<CheckboxRef, CheckboxProps>
   (({...props}, ref) => {
   return (
-    <CheckboxRx.Root className="h-[16px] w-[16px] relative appearance-none flex items-center justify-center rounded-[5px] ring-1 ring-inset ring-contrast-higher/20 shadow-sm bg-surface-light
+    <CheckboxRx.Root className="h-[16px] w-[16px] relative appearance-none flex items-center justify-center rounded-[5px] ring-[1.5px] ring-inset ring-contrast-lower cursor-default
 
-    hover:ring-contrast-higher/30 hover:bg-surface-lighter 
+    hover:ring-contrast-low/70
     
-    data-[state=checked]:bg-primary data-[state=checked]:text-white data-[state=checked]:ring-primary
+    data-[state=checked]:bg-primary data-[state=checked]:text-white data-[state=checked]:ring-primary data-[state=checked]:shadow
 
-    data-[state=checked]:before:absolute data-[state=checked]:before:pointer-events-none data-[state=checked]:before:inset-0 data-[state=checked]:before:rounded-inherit data-[state=checked]:before:shadow-md data-[state=checked]:before:shadow-primary/40 dark:data-[state=checked]:before:shadow-primary/30
+    data-[state=checked]:before:absolute data-[state=checked]:before:pointer-events-none data-[state=checked]:before:inset-0 data-[state=checked]:before:rounded-inherit data-[state=checked]:before:shadow-md data-[state=checked]:before:shadow-primary/30
 
     dark:data-[state=checked]:after:absolute dark:data-[state=checked]:after:inset-0 dark:data-[state=checked]:after:rounded-inherit dark:data-[state=checked]:after:pointer-events-none dark:data-[state=checked]:after:shadow-[inset_0_1px_0_hsla(var(--color-white)/0.2)]
     
